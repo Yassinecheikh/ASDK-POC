@@ -265,11 +265,7 @@
 				"[resourceId('Microsoft.Compute/images/', variables('imageName'))]"
 			],
 			"properties": {
-				"priority": "Spot",
-                "evictionPolicy": "Deallocate",
-                "billingProfile": {
-                    "maxPrice": -1
-                },
+				
 				"hardwareProfile": {
 					"vmSize": "[parameters('vmSize')]"
 				},
